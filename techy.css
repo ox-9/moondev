@@ -148,6 +148,25 @@ nav ul li button:hover{
 .socials i:hover{
     transform: scale(1.03);
 }
+#moonfloater{
+    transform: scale(50);
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
 .codebox{
     background-color: gray;
 }
@@ -276,5 +295,96 @@ nav ul li button:hover{
     }
     .col h2{
         font-size: 30px;
+    }
+}
+@media only screen and (max-width:475px){
+    .col2{
+        padding-left: 200px;
+
+    }
+@media only screen and (max-width:450px){
+    nav ul{
+        width: 24%;
+        padding-top: 5px;
+        border-radius: 20px 0px 0px 20px;
+        padding-left: 10px;
+        padding-right: 0;
+        text-align: left;
+        padding-bottom: 15px;
+        background: rgba(44, 44, 44, 0);
+        position: absolute;
+        top: 90px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li a:hover{
+        background-color: rgb(31, 31, 31);
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    nav ul li a{
+        color: white;
+        font-size: 11px;
+    }
+    .drop{
+        cursor: pointer;
+        display: block;
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s ease all;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col1{
+        
+        margin-top: 70px;
+        margin-left: -110px;
+    }
+    .col2{
+        padding-left: 210px;
+        margin-top: 200px;
+        /* move to the right */
+        font-size: 12px;
+        margin-right: -25px;
+
+        top: 300px;
+    }
+    .col2 .js{
+        font-size: 85%;
+    }
+
+    .col1 h1{
+        font-size: 60px;
+    }
+    .col h2{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:440px){
+    .col1{
+        margin-left: -50px;
+
+    }
+    .col2{
+        padding-left: 200px;
+        font-size: 11px;
+    }
+}
+}
+
+@media only screen and (max-width:410px){
+    #moonfloater{
+        visibility: visible;
+    }
+    .col2{
+        visibility: hidden;
     }
 }
