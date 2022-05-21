@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name = 'viewport' content="width=device-width, initial-scale = 1.0">
+      <meta name = 'keywords' content="HTML, CSS">
+      <link rel="stylesheet" href="exp.css"/>
+      <script src="script.js"></script>
+      <meta name="description" content="...">
+      <script src="https://kit.fontawesome.com/3357d6b109.js" crossorigin="anonymous"></script>
+    <title>Experience</title>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <i id="icon" class="fa fa-code"></i>
+                <nav>
+                    <ul id="menulist">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Me</a></li>
+                        <li><a href="">Experience</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><button> <i class="fa fa-moon"></i></button></li>
+                    </ul>
+                </nav>
+                <img src="menu.png" alt="a" class="drop" onclick="togglemenu()">
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <h4>My experience as a:</h4>
+                    <h1>Developer</h1>
+                    <button id="download"> Download Portfolio</button><br>
+                    <span class="socials"><i class="fa fa-github"> </i> <i class="fab fa-discord"> </i> <i class="fa fa-at"></i></span>
+                </div>
+                <span class="textboxx">
+                    <p>As of now I currently know 5 languages, these languages include Python, JavaScript, Java, HTML, and CSS. The icons of these languages are shown to the right. I have coded many discord bots using d.js and d.py, and many websites like the one you are seeing now. I am proficient in 4/5 of the languages, yet I know a decent amount of Java. I am excited to learn more about java in AP Compsci.</p>
+                </span>
+                <div class="col2">
+
+                    <span class="icons"> 
+                        <div> <i id="fpy" class="fab fa-python"></i></div>
+                        <div> <i id="fjs" class="fab fa-js"></i></div>
+                        <div> <i id="fcss" class="fab fa-css3-alt"></i></div>
+                        <div> <i id="fhtml" class="fab fa-html5"></i></div>
+                        <div> <i id="fja" class="fab fa-java"></i></div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script>
+            var menulist = document.getElementById("menulist");
+    
+            menulist.style.maxHeight = "0px";
+            function togglemenu(){
+                if (menulist.style.maxHeight == "0px"){
+                    menulist.style.maxHeight = "130px";
+                }else{
+                    menulist.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+
+
+    
+</body>
+<html>
