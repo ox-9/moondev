@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name = 'viewport' content="width=device-width, initial-scale = 1.0">
+      <meta name = 'keywords' content="HTML, CSS">
+      <link rel="stylesheet" href="techy.css"/>
+      <script src="script.js"></script>
+      <meta name="description" content="...">
+      <script src="https://kit.fontawesome.com/3357d6b109.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <i id="icon" class="fa fa-code"></i>
+                <nav>
+                    <ul id="menulist">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Me</a></li>
+                        <li><a href="experiance.html">Experience</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><button> <i class="fa fa-moon"></i></button></li>
+                    </ul>
+                </nav>
+                <img src="menu.png" alt="a" class="drop" onclick="togglemenu()">
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <h4>Hello, I'm</h4>
+                    <h1>MAYANK</h1>
+                    <h2>Creative Developer & Student</h2>
+                    <button id="download"> Download Portfolio</button><br>
+                    <span class="socials"><i class="fa fa-github"> </i> <i class="fab fa-discord"> </i> <i class="fa fa-at"></i></span>
+                </div>
+                <div class="col2">
+                    <img src="./images/hi.png" alt="a" id="moonfloater">
+                    <span class="exit">🔴 🟡 🟢</span>
+                    <span class="js">
+                        <ol><span class="num">1</span>ㅤㅤclass Person {</ol>
+                        <ol><span class="num">2</span>ㅤㅤㅤㅤconstructor() {</ol>
+                        <ol><span class="num">3</span>ㅤㅤㅤㅤㅤㅤthis.name = 'Mayank';</ol>
+                        <ol><span class="num">4</span>ㅤㅤㅤㅤㅤㅤthis.hobbies = ['Coding', 'Sleeping', 'Repeat'];</ol>
+                        <ol><span class="num">5</span>ㅤㅤㅤㅤㅤㅤthis.age = new Date().getFullYear() - 2007</ol>
+                        <ol><span class="num">6</span>ㅤㅤㅤㅤ}</ol>
+                        <ol><span class="num">7</span>ㅤㅤ}</ol>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script>
+            var menulist = document.getElementById("menulist");
+    
+            menulist.style.maxHeight = "0px";
+            function togglemenu(){
+                if (menulist.style.maxHeight == "0px"){
+                    menulist.style.maxHeight = "130px";
+                }else{
+                    menulist.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+
+
+    
+</body>
+<html>
